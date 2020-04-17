@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('projects/lib1/src/lib/lib1.service'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('lib1', ['exports', '@angular/core', 'rxjs', 'projects/lib1/src/lib/lib1.service', '@angular/common'], factory) :
-    (global = global || self, factory(global.lib1 = {}, global.ng.core, global.rxjs, global.lib1_service, global.ng.common));
-}(this, (function (exports, core, rxjs, lib1_service, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('lib1', ['exports', '@angular/core', 'rxjs', '@angular/common'], factory) :
+    (global = global || self, factory(global.lib1 = {}, global.ng.core, global.rxjs, global.ng.common));
+}(this, (function (exports, core, rxjs, common) { 'use strict';
 
     var Lib1Service = /** @class */ (function () {
         function Lib1Service() {
@@ -27,7 +27,7 @@
         }
         Lib1Component.prototype.ngOnInit = function () {
         };
-        Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(core.ɵɵdirectiveInject(lib1_service.Lib1Service)); };
+        Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(core.ɵɵdirectiveInject(Lib1Service)); };
         Lib1Component.ɵcmp = core.ɵɵdefineComponent({ type: Lib1Component, selectors: [["lib-lib1"]], decls: 3, vars: 3, template: function Lib1Component_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵelementStart(0, "p");
                 core.ɵɵtext(1);
@@ -46,7 +46,7 @@
                     template: "\n    <p>\n      lib1 works!\n      {{service.getstring()|async}}\n    </p>\n  ",
                     styles: []
                 }]
-        }], function () { return [{ type: lib1_service.Lib1Service }]; }, null); })();
+        }], function () { return [{ type: Lib1Service }]; }, null); })();
 
     var Lib1Module = /** @class */ (function () {
         function Lib1Module() {

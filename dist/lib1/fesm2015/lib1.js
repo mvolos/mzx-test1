@@ -1,6 +1,5 @@
 import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵpipe, ɵɵelementEnd, ɵɵadvance, ɵɵtextInterpolate1, ɵɵpipeBind1, Component, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 import { of } from 'rxjs';
-import { Lib1Service as Lib1Service$1 } from 'projects/lib1/src/lib/lib1.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 class Lib1Service {
@@ -25,7 +24,7 @@ class Lib1Component {
     ngOnInit() {
     }
 }
-Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(ɵɵdirectiveInject(Lib1Service$1)); };
+Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(ɵɵdirectiveInject(Lib1Service)); };
 Lib1Component.ɵcmp = ɵɵdefineComponent({ type: Lib1Component, selectors: [["lib-lib1"]], decls: 3, vars: 3, template: function Lib1Component_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "p");
         ɵɵtext(1);
@@ -47,7 +46,7 @@ Lib1Component.ɵcmp = ɵɵdefineComponent({ type: Lib1Component, selectors: [["l
   `,
                 styles: []
             }]
-    }], function () { return [{ type: Lib1Service$1 }]; }, null); })();
+    }], function () { return [{ type: Lib1Service }]; }, null); })();
 
 class Lib1Module {
 }

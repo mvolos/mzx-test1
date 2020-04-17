@@ -1,6 +1,5 @@
 import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵpipe, ɵɵelementEnd, ɵɵadvance, ɵɵtextInterpolate1, ɵɵpipeBind1, Component, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 import { of } from 'rxjs';
-import { Lib1Service as Lib1Service$1 } from 'projects/lib1/src/lib/lib1.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 var Lib1Service = /** @class */ (function () {
@@ -26,7 +25,7 @@ var Lib1Component = /** @class */ (function () {
     }
     Lib1Component.prototype.ngOnInit = function () {
     };
-    Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(ɵɵdirectiveInject(Lib1Service$1)); };
+    Lib1Component.ɵfac = function Lib1Component_Factory(t) { return new (t || Lib1Component)(ɵɵdirectiveInject(Lib1Service)); };
     Lib1Component.ɵcmp = ɵɵdefineComponent({ type: Lib1Component, selectors: [["lib-lib1"]], decls: 3, vars: 3, template: function Lib1Component_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "p");
             ɵɵtext(1);
@@ -45,7 +44,7 @@ var Lib1Component = /** @class */ (function () {
                 template: "\n    <p>\n      lib1 works!\n      {{service.getstring()|async}}\n    </p>\n  ",
                 styles: []
             }]
-    }], function () { return [{ type: Lib1Service$1 }]; }, null); })();
+    }], function () { return [{ type: Lib1Service }]; }, null); })();
 
 var Lib1Module = /** @class */ (function () {
     function Lib1Module() {

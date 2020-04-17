@@ -1,5 +1,5 @@
 import { OnInit } from '@angular/core';
-import { Lib1Service } from 'projects/lib1/src/lib/lib1.service';
+import { Lib1Service } from './lib1.service';
 import * as i0 from "@angular/core";
 export declare class Lib1Component implements OnInit {
     service: Lib1Service;

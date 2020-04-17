@@ -8,7 +8,7 @@
         function Lib1Service() {
         }
         Lib1Service.prototype.getstring = function () {
-            return rxjs.of('lib service works');
+            return rxjs.of('lib service works v3');
         };
         Lib1Service.ɵfac = function Lib1Service_Factory(t) { return new (t || Lib1Service)(); };
         Lib1Service.ɵprov = core.ɵɵdefineInjectable({ token: Lib1Service, factory: Lib1Service.ɵfac, providedIn: 'root' });

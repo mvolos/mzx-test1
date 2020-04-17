@@ -7,7 +7,7 @@ var Lib1Service = /** @class */ (function () {
     function Lib1Service() {
     }
     Lib1Service.prototype.getstring = function () {
-        return of('lib service works');
+        return of('lib service works v3');
     };
     Lib1Service.ɵfac = function Lib1Service_Factory(t) { return new (t || Lib1Service)(); };
     Lib1Service.ɵprov = ɵɵdefineInjectable({ token: Lib1Service, factory: Lib1Service.ɵfac, providedIn: 'root' });

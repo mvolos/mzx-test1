@@ -6,7 +6,7 @@ import { AsyncPipe, CommonModule } from '@angular/common';
 class Lib1Service {
     constructor() { }
     getstring() {
-        return of('lib service works');
+        return of('lib service works v3');
     }
 }
 Lib1Service.ɵfac = function Lib1Service_Factory(t) { return new (t || Lib1Service)(); };

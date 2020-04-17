@@ -8,6 +8,6 @@ import { Lib1Component } from 'lib1';
 })
 export class AppComponent {
   title = 'app1';
-  @ViewChild() vchild: Lib1Component
+  @ViewChild('') vchild: Lib1Component
 
 }

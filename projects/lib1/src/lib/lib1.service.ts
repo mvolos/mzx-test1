@@ -9,6 +9,6 @@ export class Lib1Service {
   constructor() { }
 
   getstring():Observable<string>{
-    return of('lib service works')
+    return of('lib service works v3')
   }
 }
